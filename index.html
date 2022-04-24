@@ -89,7 +89,7 @@ boardReady({board: 'Smart', device: 'BkPny', transport: 'mqtt'}, async function 
         events: {
           onReady: function (evt) {
             youtube.loadVideoById({
-              videoId: '5lgBUBHvmIQ'
+              videoId: 'Cmt9VTL1G1E'
             });
             resolve();
           },
@@ -110,28 +110,19 @@ boardReady({board: 'Smart', device: 'BkPny', transport: 'mqtt'}, async function 
   rfid.read();
   rfid.on("enter",async function(_uid){
     rfid._uid = _uid;
-    if(rfid._uid == 'bf2b53c'){
-      youtube.loadVideoById(getYoutubeVideoId('LjIiPHjEMyI'));
+    if(rfid._uid == 'A0159E22'){
+      youtube.loadVideoById(getYoutubeVideoId('mCrXCKbIojA'));
     }
-    if(rfid._uid == '73743fba'){
-      youtube.loadVideoById(getYoutubeVideoId('d2iFUkURb9I'));
+    if(rfid._uid == '852FA3AC'){
+      youtube.loadVideoById(getYoutubeVideoId('7G5K25EDycA'));
     }
-    if(rfid._uid == 'dd1a69c'){
-      youtube.loadVideoById(getYoutubeVideoId('oCW9G0YgBj4'));
-    }
-     if(rfid._uid == '163752ea'){
-      youtube.loadVideoById(getYoutubeVideoId('zFUVF3gwEL0'));
-    }
-     if(rfid._uid == '163f16fa'){
-      youtube.loadVideoById(getYoutubeVideoId('-KYtZjacLAY'));
-    }
-     if(rfid._uid == 'dd41a1c'){
-      youtube.loadVideoById(getYoutubeVideoId('0klFeO0jypY'));
+    if(rfid._uid == '1A316017'){
+      youtube.loadVideoById(getYoutubeVideoId('Tm948kh_K-0'));
     }
   });
   youtubeStop = 0;
   function youtubeStopCallback() {
-    youtube.loadVideoById(getYoutubeVideoId('5lgBUBHvmIQ'));
+    youtube.loadVideoById(getYoutubeVideoId('Cmt9VTL1G1E'));
   }
 });
 
