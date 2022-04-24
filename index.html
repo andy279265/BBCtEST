@@ -110,7 +110,6 @@ boardReady({board: 'Smart', device: 'BkPny', transport: 'mqtt'}, async function 
   rfid.read();
   rfid.on("enter",async function(_uid){
     rfid._uid = _uid;
-    <!--第一組-->
     if(rfid._uid == 'bf2b53c'){
       youtube.loadVideoById(getYoutubeVideoId('LjIiPHjEMyI'));
     }
