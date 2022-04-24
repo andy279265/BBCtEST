@@ -89,7 +89,7 @@ boardReady({board: 'Smart', device: 'BkPny', transport: 'mqtt'}, async function 
         events: {
           onReady: function (evt) {
             youtube.loadVideoById({
-              videoId: 'Cmt9VTL1G1E'
+              videoId: '5lgBUBHvmIQ'
             });
             resolve();
           },
@@ -110,19 +110,67 @@ boardReady({board: 'Smart', device: 'BkPny', transport: 'mqtt'}, async function 
   rfid.read();
   rfid.on("enter",async function(_uid){
     rfid._uid = _uid;
-    if(rfid._uid == 'A0159E22'){
-      youtube.loadVideoById(getYoutubeVideoId('mCrXCKbIojA'));
+    <!--第一組-->
+    if(rfid._uid == 'bf2b53c'){
+      youtube.loadVideoById(getYoutubeVideoId('LjIiPHjEMyI'));
     }
-    if(rfid._uid == '852FA3AC'){
-      youtube.loadVideoById(getYoutubeVideoId('7G5K25EDycA'));
+    if(rfid._uid == '73743fba'){
+      youtube.loadVideoById(getYoutubeVideoId('d2iFUkURb9I'));
     }
-    if(rfid._uid == '1A316017'){
-      youtube.loadVideoById(getYoutubeVideoId('Tm948kh_K-0'));
+    if(rfid._uid == 'dd1a69c'){
+      youtube.loadVideoById(getYoutubeVideoId('oCW9G0YgBj4'));
+    }
+     if(rfid._uid == '163752ea'){
+      youtube.loadVideoById(getYoutubeVideoId('zFUVF3gwEL0'));
+    }
+     if(rfid._uid == '163f16fa'){
+      youtube.loadVideoById(getYoutubeVideoId('-KYtZjacLAY'));
+    }
+     if(rfid._uid == 'dd41a1c'){
+      youtube.loadVideoById(getYoutubeVideoId('0klFeO0jypY'));
+    }
+        <!--第二組-->
+     if(rfid._uid == 'dd174cc'){
+      youtube.loadVideoById(getYoutubeVideoId('LjIiPHjEMyI'));
+    }
+    if(rfid._uid == 'dc6eeec'){
+      youtube.loadVideoById(getYoutubeVideoId('d2iFUkURb9I'));
+    }
+    if(rfid._uid == 'bf7ef7c'){
+      youtube.loadVideoById(getYoutubeVideoId('oCW9G0YgBj4'));
+    }
+     if(rfid._uid == 'dd2f2dc'){
+      youtube.loadVideoById(getYoutubeVideoId('zFUVF3gwEL0'));
+    }
+     if(rfid._uid == 'bedec6c'){
+      youtube.loadVideoById(getYoutubeVideoId('-KYtZjacLAY'));
+    }
+     if(rfid._uid == 'bfc20c'){
+      youtube.loadVideoById(getYoutubeVideoId('0klFeO0jypY'));
+    }
+            <!--第三組-->
+     if(rfid._uid == 'bfd1adc'){
+      youtube.loadVideoById(getYoutubeVideoId('LjIiPHjEMyI'));
+    }
+    if(rfid._uid == '164b2da'){
+      youtube.loadVideoById(getYoutubeVideoId('d2iFUkURb9I'));
+    }
+    if(rfid._uid == 'dcfb1ac'){
+      youtube.loadVideoById(getYoutubeVideoId('oCW9G0YgBj4'));
+    }
+     if(rfid._uid == '16a747fa'){
+      youtube.loadVideoById(getYoutubeVideoId('zFUVF3gwEL0'));
+    }
+     if(rfid._uid == 'bf0ceac'){
+      youtube.loadVideoById(getYoutubeVideoId('-KYtZjacLAY'));
+    }
+     if(rfid._uid == 'dc7708c'){
+      youtube.loadVideoById(getYoutubeVideoId('0klFeO0jypY'));
     }
   });
   youtubeStop = 0;
   function youtubeStopCallback() {
-    youtube.loadVideoById(getYoutubeVideoId('Cmt9VTL1G1E'));
+    youtube.loadVideoById(getYoutubeVideoId('5lgBUBHvmIQ'));
   }
 });
 
