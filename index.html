@@ -51,7 +51,7 @@ Released under the MIT license: http://jsbin.mit-license.org
 
 @media (max-aspect-ratio: 16/9) {
   #player {
-    width: 70%;
+    width: 100%;
     left: 0%;
   }
 }
@@ -81,7 +81,7 @@ boardReady({board: 'Smart', device: 'BkPny', transport: 'mqtt'}, async function 
     window.onYouTubeIframeAPIReady = function () {
       youtube = new YT.Player('player', {
         height: '240',
-        width: '96%',
+        width: '90%',
         playerVars: {
           autoplay: 1,
           controls: 1
